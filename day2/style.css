@@ -1,0 +1,188 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #243447;
+  background: #eef3f8;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Site header and navigation */
+header {
+  padding: 2rem 1rem;
+  color: #ffffff;
+  text-align: center;
+  background: #1f4e79;
+}
+
+header h1 {
+  margin: 0 0 1rem;
+  font-size: 2.25rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #1f4e79;
+  background: #ffffff;
+}
+
+/* Main content and section cards */
+main {
+  width: min(100% - 2rem, 960px);
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #d8e2ec;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(31 78 121 / 8%);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #1f4e79;
+}
+
+/* Responsive feature cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  padding: 1rem;
+  color: #24435f;
+  background: #eaf3fb;
+  border-left: 4px solid #3b82b6;
+  border-radius: 4px;
+}
+
+/* Shortcuts table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #b9c9d8;
+}
+
+th {
+  color: #ffffff;
+  background: #1f4e79;
+}
+
+/* Stacked, full-width form fields */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  font: inherit;
+  color: #243447;
+  border: 1px solid #aebdca;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #3b82b6;
+  outline-offset: 1px;
+}
+
+button {
+  align-self: flex-start;
+  padding: 0.7rem 1.2rem;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  background: #2f7d32;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+button:focus-visible {
+  background: #235f27;
+  transform: translateY(-2px);
+}
+
+footer {
+  padding: 1.5rem 1rem;
+  color: #526476;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Phone layout */
+@media (max-width: 600px) {
+  header {
+    padding: 1.25rem 0.75rem;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  main {
+    width: min(100% - 1rem, 960px);
+    margin: 1rem auto;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.55rem;
+  }
+}

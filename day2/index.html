@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>QuickNotes</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Capture your ideas</h2>
+      <p>QuickNotes is a simple, fast note-taking app for ideas, to-do items, and reminders.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="note-title">Title</label>
+          <input type="text" id="note-title" name="note-title" placeholder="Note title" required>
+        </div>
+        <div>
+          <label for="note-message">Note</label>
+          <textarea id="note-message" name="note-message" rows="6" placeholder="Write your note here..." required></textarea>
+        </div>
+        <button type="submit">Save Note</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Why use QuickNotes?</h2>
+      <ul class="features">
+        <li>Create and save notes in seconds.</li>
+        <li>Simple, distraction-free interface.</li>
+        <li>Keyboard shortcuts for common actions.</li>
+        <li>Works entirely in your browser.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 QuickNotes. All rights reserved.</p>
+  </footer>
+</body>
+</html>
