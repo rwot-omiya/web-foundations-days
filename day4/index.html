@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Character Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Live Character Counter</h1>
+    <button id="theme-toggle" type="button">Dark mode</button>
+  </header>
+
+  <main>
+    <section class="counter-card" aria-labelledby="page-title">
+      <h2 id="page-title">Write a note</h2>
+      <label for="note-text">Your note</label>
+      <textarea id="note-text" rows="10" placeholder="Start typing your note..."></textarea>
+      <div class="counter-row" aria-live="polite">
+        <p id="char-count">0 / 200 characters</p>
+        <p id="word-count">0 words</p>
+      </div>
+      <button id="clear-btn" type="button">Clear</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Your draft is saved automatically in this browser.</p>
+  </footer>
+</body>
+</html>
