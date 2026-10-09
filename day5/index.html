@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Directory</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="users.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>User Directory</h1>
+    <p>Load and filter users from a public API.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="directory-heading">
+      <h2 id="directory-heading">Users</h2>
+      <button id="load-users" type="button">Load users</button>
+
+      <div class="filter-group">
+        <label for="filter-input">Filter by name</label>
+        <input id="filter-input" type="search" placeholder="Start typing a name..." autocomplete="off">
+      </div>
+
+      <p id="status" role="status" aria-live="polite">Click "Load users" to fetch the directory.</p>
+      <ul id="users-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data provided by JSONPlaceholder.</p>
+  </footer>
+</body>
+</html>
