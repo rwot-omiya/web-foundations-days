@@ -1,0 +1,7 @@
+# Course Reflection
+
+The most difficult concept in the course was designing for scale without losing correctness. It was easy to draw more servers, but harder to decide which data could be cached, which reads could tolerate replica lag, and which operations needed a transaction. I overcame this by separating the read path from the write path and repeatedly asking what the source of truth was. For ticketing, that led me to keep seat ownership in a primary database with constraints and short transactions, while using a CDN, cache and read replicas for browsing.
+
+Based on the feedback I received, I would improve the capstone by making the client’s error and empty states more visible and by adding stronger automated tests for network failures, duplicate submissions and slow responses. I would also make the API client’s boundaries clearer so the practice JSONPlaceholder behavior is easier to distinguish from the production API design. Those changes would make the project easier to demonstrate and more convincing as an engineering handoff.
+
+Next, I want to learn more about observability and production operations: metrics, distributed tracing, alert design, load testing and database failover drills. I also want to practice implementing an idempotent payment workflow with a real queue and a relational database, because those topics connect the frontend work, system design and correctness requirements from the course.
